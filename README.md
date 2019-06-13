@@ -21,7 +21,7 @@ To further verify the result will will also perform this experiment on (https://
 #### Notebooks:
 1. Cleaning: data management and cleaning for the dataset
 2. Models: initial testing and modelling: SVM, Decision Tree and Random Forest
-3. (note yet implemented): Experiment: This notebook will contain code that implements an SVM, finely tunes the SVM and then runs the aforementioned experiment utilising the 500 random forests. This will be conducted on both datasets.
+3. (not yet implemented): Experiment: This notebook will contain code that implements an SVM, finely tunes the SVM and then runs the aforementioned experiment utilising the 500 random forests. This will be conducted on both datasets.
 
 
 ## Publication
