@@ -1,4 +1,4 @@
-#Determing the Key Factors and Features In a Cancer Diagnoses
+# Determing the Key Factors and Features In a Cancer Diagnoses
 
 ## Introduction
 This project is utilising a dataset of breast cancer patients in order to develop predictive models. Specifically, we aim to create models that are able to predict the end result for a given cancer patient's diagnoses (essentially, fatal or non-fatal). Each model will use various features to determine the likelihood of fatality, such as which hospital the patient visited, what stage of cancer they have etc. Along with this predictive/classification element the key factors (the features of the dataset) will also be investigated, so as to determine the key elements that lead to a particularl ouptu (fatality or not).
