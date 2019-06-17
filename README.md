@@ -11,22 +11,21 @@ At the current point the cleaning and preliminary modelling of the data has been
 
 A random forest model has been run with 1000 estimators, we have utilised random-search and grid-search in order to find the appropriate hyperparameters. The results of this are in line with the SVM prediction accuracy. However, using 1000 estimators may have resulted in severe bias/over-fitting and an inaccurate model. To rectify this:
 
-The next step is to run an experiment to find the most important features. To do this we will create a set of 500 random forest models. Each of these models will be randomly initiated with 5 estimators (i.e. trees) and a maximum depth of 5. We will then take the most important features from this entire set.
+We run an experiment to find the most important features. To do this we created a set of 1000 random forest models. Each of these models is randomly initiated with 5 estimators (i.e. trees) and a maximum depth of 5. The most important features from each of these trees is taken and then the average is computed to get the overall importances of each feature.
 
 
-The reason for this experiment design is due to the small size of the data, by only using 5 estimators, but averaging out the result over 500 forests we are able to avoid over-fitting and bias, yet still be confident in our result. This, also is the purpose of the SVM model, if both the random forest and the SVM model have roughly the same accuracy then we can be confident in our results.
+The reason for this experiment design is due to the small size of the data, by only using 5 estimators, but averaging out the result over 1000 forests we are able to avoid over-fitting and bias, yet still be confident in our result. This, also is the purpose of the SVM model, if both the random forest and the SVM model have roughly the same accuracy then we can be confident in our results.
 
 To further verify the result will will also perform this experiment on (https://seer.cancer.gov/data/) dataset.
 
 #### Notebooks:
 1. Cleaning: data management and cleaning for the dataset
 2. Models: initial testing and modelling: SVM, Decision Tree and Random Forest
-3. (not yet implemented): Experiment: This notebook will contain code that implements an SVM, finely tunes the SVM and then runs the aforementioned experiment utilising the 500 random forests. This will be conducted on both datasets.
+3. Experiment: This notebook contains code that implements an SVM, finely tunes the SVM and then runs the aforementioned experiment utilising the 1000 random forests. This will be conducted on both datasets, currently it is only implemented on the UM dataset.
 
 
 ## Publication
 Following the development of these predictive models the results will be documented in an academic paper and published in a journal or conference.
-
 
 
 
