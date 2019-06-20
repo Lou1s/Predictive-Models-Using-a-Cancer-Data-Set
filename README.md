@@ -1,5 +1,4 @@
-# Determining the Key Factors and Features In a Cancer Diagnoses
-
+# Key Features in Predicting The Survivability of Cancer Sufferers: A Malaysian Case Study
 ## Introduction
 This project is utilising a dataset of breast cancer patients in order to develop predictive models. Specifically, we aim to create models that are able to predict the end result for a given cancer patient's diagnoses (essentially, fatal or non-fatal). Each model will use various features to determine the likelihood of fatality, such as which hospital the patient visited, what stage of cancer they have etc. Along with this predictive/classification element the key factors (the features of the dataset) will also be investigated, so as to determine the key elements that lead to a particular ouptuy (fatality or not).
 
@@ -21,9 +20,10 @@ To further verify the result will will also perform this experiment on (https://
 #### Notebooks:
 1. Cleaning: data management and cleaning for the dataset
 2. Models: initial testing and modelling: SVM, Decision Tree and Random Forest
-3. Experiment: This notebook contains code that implements an SVM, finely tunes the SVM and then runs the aforementioned experiment utilising the 1000 random forests. This will be conducted on both datasets, currently it is only implemented on the UM dataset.
+3. Experiment: This notebook contains code that implements an SVM, tunes the SVM and then runs the aforementioned experiment utilising the 1000 random forests. This is conducted on both datasets.
 
-
+## Results
+The metrics from the SVM and random forests conducted on the UM dataset are consistent with both eachother as well as with the metrics computed for the SEER dataset. This is a promising result, furhter information on the overall results can be gleaned from the notebook and will be fully explained in the publication.
 ## Publication
 Following the development of these predictive models the results will be documented in an academic paper and published in a journal or conference.
 
